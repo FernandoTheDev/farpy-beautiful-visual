@@ -1,0 +1,46 @@
+{
+  "name": "fp",
+  "displayName": "Farpy Beautiful Visual",
+  "description": "Only Beautiful Visual for sintax.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "fp",
+        "aliases": ["Farpy", "fp"],
+        "extensions": [".farpy", ".fp"],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "./farpy-icon.svg",
+          "light": "./farpy-icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fp",
+        "scopeName": "source.farpy",
+        "path": "./syntaxes/fp.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "fp",
+        "path": "./snippets/farpy-snippets.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Farpy Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/farpy-theme.json"
+      }
+    ]
+  }
+}

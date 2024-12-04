@@ -1,0 +1,61 @@
+{
+    "name": "Farpy Syntax Highlighting",
+    "type": "dark", // Ou "light" se preferir o tema claro, depende do tema base do usuário
+    "colors": {
+        // Mantém as cores padrão do VS Code, sem alteração
+        "editor.background": "#1E1E1E", // Cor de fundo do editor (não vai alterar, padrão do usuário)
+        "editor.foreground": "#D4D4D4", // Cor do texto (não vai alterar, padrão do usuário)
+        "editor.selectionBackground": "#B4D5FF", // Seleção de texto (não vai alterar, padrão do usuário)
+        "editor.lineHighlightBackground": "#2A2A2A", // Linha de destaque (não vai alterar, padrão do usuário)
+        "editorCursor.foreground": "#FF5733" // Cor do cursor (não vai alterar, padrão do usuário)
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control.fp",
+            "settings": {
+                "foreground": "#FF5733", // Laranja para palavras-chave como 'if', 'for', 'while', etc.
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "string.quoted.double.fp",
+            "settings": {
+                "foreground": "#D4AC6E", // Amarelo para strings
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "constant.character.escape.fp",
+            "settings": {
+                "foreground": "#A569BD", // Roxo para caracteres de escape
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "variable.other.local.fp",
+            "settings": {
+                "foreground": "#7F8C8D" // Cinza para variáveis locais
+            }
+        },
+        {
+            "scope": "variable.other.global.fp",
+            "settings": {
+                "foreground": "#1F77B4" // Azul para variáveis globais
+            }
+        },
+        {
+            "scope": "function.fp",
+            "settings": {
+                "foreground": "#8E44AD", // Roxo para funções
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "variable.other.parameter.fp",
+            "settings": {
+                "foreground": "#E74C3C", // Vermelho para parâmetros de função
+                "fontStyle": "italic"
+            }
+        }
+    ]
+}

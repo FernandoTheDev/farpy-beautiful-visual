@@ -1,0 +1,18 @@
+{
+    "Variable Declaration": {
+        "prefix": "newvar",
+        "body": [
+            "new ${1:variable} = \"${2:value}\";"
+        ],
+        "description": "Snippet for declaring a new variable"
+    },
+    "Function Definition": {
+        "prefix": "fn",
+        "body": [
+            "fn ${1:function_name}(${2:parameters}) {",
+            "\t${3:// function body}",
+            "}"
+        ],
+        "description": "Snippet for defining a function"
+    }
+}
